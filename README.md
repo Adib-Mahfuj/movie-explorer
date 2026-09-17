@@ -1,16 +1,155 @@
-# React + Vite
+# 🎬 CineScope
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CineScope is a responsive React application that allows users to explore TV shows, search for specific shows, and view detailed information through an interactive modal.
 
-Currently, two official plugins are available:
+The project was built as a React assignment using the TVMaze API for show data.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+* Responsive navigation bar
+* Home page with hero section
+* Show listing page
+* Search shows by title
+* Responsive show card grid
+* Show rating and release year
+* Detailed show information modal
+* Modal close button
+* Close modal by clicking outside
+* Loading state
+* Error handling
+* Empty search result state
+* Responsive design for mobile, tablet, and desktop
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technologies Used
 
-## Expanding the ESLint configuration
+* React
+* JavaScript
+* Tailwind CSS
+* React Router
+* TVMaze API
+* Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🌐 API
+
+This project uses the free TVMaze API.
+
+### Get all shows
+
+```text
+https://api.tvmaze.com/shows
+```
+
+### Search shows
+
+```text
+https://api.tvmaze.com/search/shows?q=batman
+```
+
+TVMaze provides TV show data, so the application uses the term **Shows** throughout the user interface.
+
+## 📁 Project Structure
+
+```text
+src/
+│
+├── components/
+│   ├── Navbar.jsx
+│   ├── Footer.jsx
+│   ├── MovieCard.jsx
+│   └── MovieModal.jsx
+│
+├── pages/
+│   ├── Home.jsx
+│   └── Movies.jsx
+│
+├── App.jsx
+├── index.css
+└── main.jsx
+```
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone YOUR_REPOSITORY_URL
+```
+
+### 2. Open the project
+
+```bash
+cd movie-explorer
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+The application will normally be available at:
+
+```text
+http://localhost:5173
+```
+
+## 📱 Responsive Design
+
+CineScope is designed to work across different screen sizes.
+
+* **Mobile:** Single-column show grid
+* **Tablet:** Two to three-column grid
+* **Desktop:** Four-column grid
+
+## 🎯 Main Pages
+
+### Home
+
+The Home page contains:
+
+* Application branding
+* Navigation
+* Hero section
+* Call-to-action button
+* Short introduction
+* Footer
+
+### Shows
+
+The Shows page contains:
+
+* Search bar
+* Show listing
+* Responsive cards
+* Ratings
+* Release year
+* Details button
+
+### Details Modal
+
+The modal displays:
+
+* Show poster
+* Show name
+* Rating
+* Release year
+* Genres
+* Network
+* Summary
+* Close button
+
+## 📌 Note
+
+Although the original assignment refers to a Movie Explorer, the provided API endpoints are from TVMaze and return TV show data. Therefore, this project uses **Shows** terminology in the user interface while keeping the card component and assignment structure aligned with the original requirements.
+
+## 👨‍💻 Author
+
+**Adib Mahfuj**
+
+Built with React and Tailwind CSS.

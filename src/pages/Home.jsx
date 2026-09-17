@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <main>
       <section className="relative overflow-hidden bg-slate-950">
-        <div className="absolute inset-0 bg-gradient-to-br from-indigo-950 via-slate-950 to-slate-950" />
+        <div className="absolute inset-0 bg-linear-to-br from-indigo-950 via-slate-950 to-slate-950" />
 
         <div className="relative mx-auto flex min-h-[calc(100vh-73px)] max-w-6xl items-center px-4 py-20">
           <div className="max-w-2xl">
